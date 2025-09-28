@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mi Hobby: Videojuegos – Mini Sitio</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+
+<body>
+  <header class="container">
+    <h1>Mi Hobby: Videojuegos</h1>
+    <p class="lead">
+      Bienvenido a mi espacio personal donde comparto mi pasión por los videojuegos,
+      desde clásicos hasta las últimas novedades del gaming.
+    </p>
+    <nav class="tabs">
+      <a href="#intro">Introducción</a>
+      <a href="#galeria">Galería</a>
+      <a href="#comentarios">Comentarios</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- Introducción -->
+    <section id="intro" class="card">
+      <h2>Introducción</h2>
+      <p>
+        Para mí, el gaming es el arte de la inmersión total. Los videojuegos son la herramienta perfecta para desconectar
+        y sumergirme por completo, ya que me permiten explorar mundos fantásticos que desafían la imaginación y vivir
+        aventuras épicas con personajes inolvidables. Además, son un medio genial para conectar con otros jugadores y
+        forjar nuevas amistades.
+      </p>
+    </section>
+
+    <!-- Galería simple -->
+    <section id="galeria" class="card">
+      <h2>Galería</h2>
+      <div class="gallery">
+        <!-- Imágenes de videojuegos populares -->
+        <img src="https://upload.wikimedia.org/wikipedia/en/c/c6/The_Legend_of_Zelda_Breath_of_the_Wild.jpg"
+          alt="The Legend of Zelda: Breath of the Wild" />
+        <img src="https://upload.wikimedia.org/wikipedia/en/9/9f/Cyberpunk_2077_box_art.jpg" alt="Cyberpunk 2077" />
+        <img src="https://cdn.akamai.steamstatic.com/steam/apps/1245620/header.jpg?t=1683618443" alt="Elden Ring" />
+        <img src="https://cdn.akamai.steamstatic.com/steam/apps/1086940/header.jpg?t=1683618443"
+          alt="Baldur's Gate 3" />
+      </div>
+    </section>
+
+    <!-- Comentarios (interactivo) -->
+    <section id="comentarios" class="card">
+      <h2>Comentarios</h2>
+      <form id="comment-form" class="stack">
+        <label>
+          Nombre (autor)
+          <input name="author" placeholder="Tu nombre" required maxlength="50" />
+        </label>
+        <label>
+          Comentario
+          <textarea name="text" placeholder="Escribe tu comentario..." required maxlength="500"></textarea>
+        </label>
+        <button type="submit">Publicar</button>
+        <p class="hint">
+          -Los comentarios se guardan temporalmente en el servidor.-
+        </p>
+      </form>
+
+      <div class="comments">
+        <div class="columns">
+          <div>
+            <h3>Todos</h3>
+            <ul id="all-list" class="comment-list"></ul>
+          </div>
+          <div>
+            <h3>Mis comentarios (esta sesión)</h3>
+            <ul id="mine-list" class="comment-list"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <small>
+      Mini proyecto educativo – HTML • CSS • JS • Node.js
+    </small>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+
+</html>
